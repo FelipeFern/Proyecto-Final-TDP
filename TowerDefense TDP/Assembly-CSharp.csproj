@@ -67,10 +67,12 @@
     <Compile Include="Assets\Scrips\BulletManager.cs" />
     <Compile Include="Assets\Scrips\EnemyMovement1.cs" />
     <Compile Include="Assets\Scrips\GameOver.cs" />
+    <Compile Include="Assets\Scrips\Highscore.cs" />
     <Compile Include="Assets\Scrips\Lives.cs" />
     <Compile Include="Assets\Scrips\MoneyIU.cs" />
     <Compile Include="Assets\Scrips\Nodo.cs" />
     <Compile Include="Assets\Scrips\PauseMenu.cs" />
+    <Compile Include="Assets\Scrips\Persistencia.cs" />
     <Compile Include="Assets\Scrips\Player.cs" />
     <Compile Include="Assets\Scrips\Turret.cs" />
     <Compile Include="Assets\Scrips\WaveSpawner.cs" />

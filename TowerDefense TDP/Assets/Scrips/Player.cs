@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
 
     public static int rounds;
     public int inicialRounds = 0;
+
+    public static int highscore;
     
 
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour
         money = inicialMoney;
         lives = inicialLives;
         rounds = inicialRounds;
+        LoadHighscore();
     }
 
     public static void ReduceLives()
@@ -50,5 +53,28 @@ public class Player : MonoBehaviour
     {
         return rounds;
     }
+
+    public static int GetHighscore()
+    {
+        return highscore;
+    }
+
+    public static void SetHighscore(int i)
+    {
+        highscore = i;
+
+    }
+
+    public void SaveHighscore()
+    {
+        Persistencia.SaveHighscore(this);
+    }
+
+    public void LoadHighscore()
+    {
+        Highscore puntaje = Persistencia.LoadHighscore();
+        highscore = puntaje.GetHighscore();
+    }
+
 
 }

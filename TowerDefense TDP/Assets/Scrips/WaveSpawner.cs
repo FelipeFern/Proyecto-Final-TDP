@@ -26,7 +26,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown -= Time.deltaTime;
 
-        waveCount.text = Mathf.Round(countdown).ToString();
+        waveCount.text = "Time: " + Mathf.Round(countdown).ToString();
     }
     //Nos deja pausar por un tiempo. Se llama pero se ejecta cada cierto tiempo.
     IEnumerator SpawnWave()

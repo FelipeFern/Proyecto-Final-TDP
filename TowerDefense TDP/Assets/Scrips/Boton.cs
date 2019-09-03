@@ -1,5 +1,6 @@
 ﻿
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boton : MonoBehaviour
 {
@@ -9,12 +10,15 @@ public class Boton : MonoBehaviour
     public BuildTurrets shortTurret;
     public BuildTurrets longTurret;
 
-   
+    public Text MoneyTurretShort;
+    public Text MoneyTurretLong;
+
     // Start is called before the first frame update
     void Start()
     {
-        buildManager = BuildManager.getInstance(); 
-        
+        buildManager = BuildManager.getInstance();
+        MoneyTurretShort.text = "$" + shortTurret.cost.ToString();
+        MoneyTurretLong.text = "$" + longTurret.cost.ToString();
     }
 
     // Update is called once per frame
@@ -31,7 +35,7 @@ public class Boton : MonoBehaviour
     public void BuyTurret2()
     {
         buildManager.setTurret(longTurret);
-
+       
     }
 
 

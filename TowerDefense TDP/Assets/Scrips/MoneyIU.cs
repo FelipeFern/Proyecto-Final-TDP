@@ -7,10 +7,12 @@ public class MoneyIU : MonoBehaviour
 {
 
     public Text moneyText;
+    public Text moneyTorreta;
 
     // Update is called once per frame
     void Update()
     {
         moneyText.text = "$" + Player.money.ToString();
+       
     }
 }

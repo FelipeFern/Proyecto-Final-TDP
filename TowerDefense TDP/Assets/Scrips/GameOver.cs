@@ -36,7 +36,7 @@ public class GameOver : MonoBehaviour
 
 
     }
-
+    
     
     //Metodo para reiniciar la partida en el menu de game over.
     public void Retry()

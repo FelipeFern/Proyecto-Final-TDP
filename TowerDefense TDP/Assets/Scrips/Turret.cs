@@ -44,7 +44,7 @@ public class Turret : MonoBehaviour
             fireCountdown = 1f / fireRate;
         }
 
-        fireCountdown -= Time.deltaTime;
+        fireCountdown -= Time.deltaTime; // Tiempo entre el anterior y el actual frame.
 
     }
 

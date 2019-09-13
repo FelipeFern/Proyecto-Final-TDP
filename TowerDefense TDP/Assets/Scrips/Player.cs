@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     public int inicialRounds = 0;
 
     public static int highscore;
+
+    public GameObject Panel;
     
 
     // Start is called before the first frame update
@@ -68,6 +70,7 @@ public class Player : MonoBehaviour
     public void SaveHighscore()
     {
         Persistencia.SaveHighscore(this);
+        
     }
 
     public void LoadHighscore()
@@ -76,5 +79,9 @@ public class Player : MonoBehaviour
         highscore = puntaje.GetHighscore();
     }
 
+    public void EnableSavePanel()
+    {
+        Panel.SetActive(true);
+    }
 
 }

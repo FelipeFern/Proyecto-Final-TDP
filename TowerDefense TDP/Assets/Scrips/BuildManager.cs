@@ -25,7 +25,7 @@ public class BuildManager : MonoBehaviour
         get { return Player.money >= turretToBuild.cost; }
     }
 
-    public void setTurret(BuildTurrets turret)
+    public void SetTurret(BuildTurrets turret)
     {
         turretToBuild = turret;
     }
@@ -33,7 +33,6 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTurret(Nodo nodoP)
     {
-
         if(Player.money < turretToBuild.cost)
         {
             Debug.Log("No hay suficiente dinero.");
@@ -42,8 +41,7 @@ public class BuildManager : MonoBehaviour
 
         Player.money -= turretToBuild.cost;
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, nodoP.GetPositionToBuild(), Quaternion.identity);
-        nodoP.torreta = turret;
-       
+        nodoP.torreta = turret;  
 
 
     }

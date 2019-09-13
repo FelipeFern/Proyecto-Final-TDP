@@ -9,7 +9,7 @@ public static class Persistencia
     public static void SaveHighscore(Player player)
     {
         BinaryFormatter traductor = new BinaryFormatter();
-        string place = Application.persistentDataPath + "/player.Highscore";
+        string place = Application.persistentDataPath + "/player.Highscor";
         FileStream archivo = new FileStream(place, FileMode.Create);
 
         Highscore puntaje = new Highscore(player);
@@ -22,7 +22,7 @@ public static class Persistencia
 
     public static Highscore LoadHighscore()
     {
-        string place = Application.persistentDataPath + "/player.Highscore";
+        string place = Application.persistentDataPath + "/player.Highscor";
         if (File.Exists(place))
         {
             BinaryFormatter traductor = new BinaryFormatter();

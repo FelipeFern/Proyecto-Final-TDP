@@ -29,12 +29,12 @@ public class Boton : MonoBehaviour
 
     public void BuyTurret1()
     {
-        buildManager.setTurret(shortTurret);
+        buildManager.SetTurret(shortTurret);
     }
 
     public void BuyTurret2()
     {
-        buildManager.setTurret(longTurret);
+        buildManager.SetTurret(longTurret);
        
     }
 

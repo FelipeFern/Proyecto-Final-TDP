@@ -45,7 +45,7 @@ public class BulletManager : MonoBehaviour
             return;
         }
 
-
+        //Si no estoy cerca como para pegarle, translado la posicion de la bala.
         transform.Translate(direction.normalized * distance, Space.World);
     }
 
@@ -58,11 +58,6 @@ public class BulletManager : MonoBehaviour
         Destroy(gameObject);
        
     }
-
-
-
-    
-
 }
 
 

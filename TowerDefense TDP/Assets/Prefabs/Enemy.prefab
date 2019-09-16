@@ -107,3 +107,4 @@ MonoBehaviour:
   speed: 10
   moneyPerKill: 10
   health: 100
+  damageColor: {r: 0.6226415, g: 0.008810949, b: 0.15785061, a: 0}

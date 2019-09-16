@@ -57,7 +57,7 @@ public class Turret : MonoBehaviour
 
         if(realBullet != null)
         {
-            realBullet.Seek(target);
+            realBullet.Assing(target);
         }
 
     }

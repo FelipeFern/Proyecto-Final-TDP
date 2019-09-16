@@ -32,8 +32,7 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 1f;
         }
 
-    }
-    
+    }    
 
     //Metodo para reiniciar la partida desde el PauseMenu.
     public void Retry()
@@ -43,9 +42,4 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    //Metodo para ir al menu desde el PauseMenu.
-    public void Menu()
-    {
-        Debug.Log("Voy al menu");
-    }
 }

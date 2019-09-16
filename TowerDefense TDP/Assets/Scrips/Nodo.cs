@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Nodo : MonoBehaviour
 {
-    public Color colorNodo;
+    
     private Color colorComienzo;
-
     public Color haveMoneyColor;
     public Color haveNotMoneyColor;
 
@@ -14,14 +13,11 @@ public class Nodo : MonoBehaviour
 
     private Renderer rend;
 
-    [Header("Opcional")]
     public GameObject torreta;
 
     private BuildManager buildManager;
-
     
-
-  
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -57,13 +53,11 @@ public class Nodo : MonoBehaviour
                              
     }
      
-    //Cuando pasas por arriba del nodo cambia de color a gris.
+    //Cuando pasas por arriba del nodo cambia de color al correspondiente.
     private void OnMouseEnter()
     {
         if (!buildManager.CanBuild)
             return;
-
-        rend.material.color = colorNodo;
 
         if(buildManager.HasMoney)
         {

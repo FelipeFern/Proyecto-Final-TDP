@@ -9,23 +9,13 @@ public class BulletManager : MonoBehaviour
     public float speedBullet = 70f;
 
     public int damage = 50;
+    
 
-   
-
-
-
-
-   public void Seek(Transform enemy)
+   public void Assing(Transform enemy)
     {
         target = enemy;
     }
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
 
     // Update is called once per frame
     void Update()

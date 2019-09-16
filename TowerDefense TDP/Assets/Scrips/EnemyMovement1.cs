@@ -12,9 +12,12 @@ public class EnemyMovement1 : MonoBehaviour
     public int moneyPerKill = 10;
     public int health = 100;
 
+    public Color damageColor;
+ 
+
     void Start()
     {
-        target = WayPoints.points[0];
+        target = WayPoints.points[0];       
     }
 
     void Update()
@@ -33,8 +36,7 @@ public class EnemyMovement1 : MonoBehaviour
         if (wavepointIndex == WayPoints.points.Length - 1)
         {
             Destroy(gameObject);
-            Player.ReduceLives(); 
-            
+            Player.ReduceLives();             
         }
         else
         {
@@ -51,7 +53,8 @@ public class EnemyMovement1 : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        if(health <= 0)
+        GetComponent<Renderer> ().material.color = damageColor;
+        if (health <= 0)
         {
             Die();
         }

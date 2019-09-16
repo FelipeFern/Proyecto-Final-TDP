@@ -28,17 +28,14 @@ public class Player : MonoBehaviour
         rounds = inicialRounds;
         LoadHighscore();
     }
-
+    
     public static void ReduceLives()
     {
         if (lives > 0)
         {
             lives--;
         }
-        else
-        {
-
-        }
+        //Chequeamos desde el game manager si finaliza el juego o no.
     }
 
     public static void IncreaseMoney(int mon)

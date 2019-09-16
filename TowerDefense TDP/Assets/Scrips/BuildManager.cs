@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//Clase encargada de la creacion de las torretas.
 public class BuildManager : MonoBehaviour
 {
 

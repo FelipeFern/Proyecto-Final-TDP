@@ -21,12 +21,6 @@ public class Boton : MonoBehaviour
         MoneyTurretLong.text = "$" + longTurret.cost.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void BuyTurret1()
     {
         buildManager.SetTurret(shortTurret);

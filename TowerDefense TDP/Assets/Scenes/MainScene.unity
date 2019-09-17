@@ -13955,7 +13955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3a6e3f27956da4fb6745f9afe29f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inicialMoney: 3000
+  inicialMoney: 300
   inicialLives: 2
   inicialRounds: 0
   Panel: {fileID: 301553181}
